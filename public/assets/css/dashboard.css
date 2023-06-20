@@ -1,0 +1,21 @@
+.main-contents-dashboard, .sec-contents-dashboard{
+    width: 98%;    
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.main-content-child{
+    height: 400px;
+    padding: 10px;
+    flex-grow: 1;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.main-content-child canvas{
+    margin: auto;
+}

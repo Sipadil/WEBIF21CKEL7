@@ -1,0 +1,112 @@
+.navigasi{
+    height: 70px;
+    background: linear-gradient(to right, #000484, #881900);
+    width: calc(100% - 20px);
+    color: white;
+    line-height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navigasi i, .navigasi span{
+    font-size: 30px;
+    cursor: pointer;
+}
+.navigasi span:nth-child(2){
+    cursor: text;
+}
+.navigasi span{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 25px;
+}
+.info-profile{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    top: 70;
+    right: 0;
+    background: linear-gradient(to right, #000484, #881900);
+    z-index: 100;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.info-profile span{
+    width: 160px;
+    padding: 20px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.info-profile span:not(:first-child):hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sidebar{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    height: 1570px;
+    width: 230px;
+    background: linear-gradient(to right, #000484, #881900);
+    color: White;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 10px;
+    transition: 0.2s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sidebar-aktif{
+    font-weight: bold;
+}
+
+.sidebar span{
+    padding: 15px;
+    /* background-color: rgb(255, 255, 255); */
+    margin-bottom: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.5s;
+}
+.sidebar span:not(span:nth-of-type(1)):not(span:nth-of-type(2)):hover {
+    background-color: #881900;
+}
+
+.sidebar span:first-child{
+    background: linear-gradient(to right, #000484, #881900);
+    text-align: right;
+    padding: 0px;
+    cursor: text;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+.sidebar span:nth-child(2){
+    background: linear-gradient(to right, #000484, #881900);
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid white;
+    cursor: text;
+}
+.sidebar span img{
+    padding: 10px;
+    background-color: white;
+    border-radius: 60px;
+}
+
+
+.sidebar .toggle-sidebar i{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}

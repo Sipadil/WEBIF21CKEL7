@@ -1,0 +1,113 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #000484, #9e1a00);
+    width: 100vw;
+    height: 100vh;
+}
+.container-content{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0 10px 1px rgb(255, 255, 255);
+    width: 1000px;
+    height: 600px;
+    position: relative;
+}
+.left-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 45%;
+    height: 100%;
+    color: grey;
+    font-family: calibri;
+    font-size: 17px;
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/OIP.jpeg");
+    background-size: cover;
+    width: 65%;
+    height: 100%;
+    font-family: calibri;
+    
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    justify-content: end;
+    padding-bottom: 30px;
+    align-items: center;
+    
+}
+.login-form h1{
+    margin: auto;
+}
+.login-form input[type=text], input[type=password]{
+    width: calc(100% - 20px);
+    padding: 20px 10px 10px 10px;
+    border: 0px;
+    background-color: none;
+    border-bottom: 2px solid grey;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.login-form input[type=text]::after, input[type=password]::after{
+    background-color: none;
+}
+
+.login-form label{
+    margin-right: auto;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20px;   
+}
+.options a{
+    margin-right: 0px;
+    color: blue;
+}
+.login-form button{
+    width: 100%;
+    padding: 15px 10px 15px 10px;
+    margin: 60px 0px 10px 0px;
+    background: linear-gradient(to right, #000484, #9e1a00);
+
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login-form button:hover{
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 1000px){
+    .right-content{
+        display: none;
+    }
+    .container-content{
+        width: 400px;
+    }
+    .left-content{
+        width: 100%;
+    }
+}

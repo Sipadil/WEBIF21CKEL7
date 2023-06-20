@@ -1,0 +1,339 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: calibri;
+}
+.casingAllSec{
+    width: 100%;
+    max-width: 100%;
+    height: 1500px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    background-color: rgb(241, 244, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20PX;
+}
+.caseOverflowTable{
+    width: 95%;
+    max-width: 95%;
+    overflow-x:auto ;
+    max-height: 500px;
+    overflow-y: auto;
+}
+.opsi-fitur-inventaris,
+.opsi-fitur-rekap,
+.opsi-fitur-dokumentasi,
+.opsi-fitur-tracking{
+    width: 95%;
+    max-width: 95%;
+    height: 50px;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+}
+.opsi-fitur-inventaris span:hover,
+.opsi-fitur-rekap span:hover,
+.opsi-fitur-dokumentasi span:hover,
+.opsi-fitur-tracking span:hover{
+    background-color: rgb(72, 72, 224);
+    color: white;
+}
+.opsi-fitur-inventaris span,
+.opsi-fitur-rekap span,
+.opsi-fitur-dokumentasi span,
+.opsi-fitur-tracking span{
+    background-color: white;
+    padding: 7px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.opsi-fitur-inventaris span:first-child,
+.opsi-fitur-rekap span:first-child,
+.opsi-fitur-dokumentasi span:first-child,
+.opsi-fitur-tracking span:first-child{
+    background-color: rgb(0, 255, 149);
+    color: rgb(0, 0, 0);
+}
+.opsi-fitur-inventaris span:nth-child(2),
+.opsi-fitur-rekap span:nth-child(2),
+.opsi-fitur-dokumentasi span:nth-child(2),
+.opsi-fitur-tracking span:nth-child(2){
+    background-color: rgb(255, 25, 0);
+    color: rgb(0, 0, 0);
+}
+.opsi-fitur-inventaris input,
+.opsi-fitur-rekap input,
+.opsi-fitur-dokumentasi input,
+.opsi-fitur-tracking input{
+    border: none;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+table thead{
+    top: 0;
+    z-index: 2;
+    position: sticky;
+}
+
+table th{
+    background-color: rgb(41, 41, 156);
+    color: white;
+    padding: 5px;
+    text-align: left;
+}
+
+table td{
+    padding: 5px;
+    border-bottom: 1px solid rgb(0, 0, 69);
+    min-height: 27px;
+    height: 27px;
+}
+table tbody td:last-child{
+    white-space: nowrap;
+    border-left: 1px solid grey;
+    text-align: center;
+
+}
+
+table thead th:first-child, table tbody td:first-child{
+    border-right: 1px solid grey;
+    text-align: center;
+}
+
+
+.tombol-aksi-edit{
+    background-color: rgb(50, 119, 246);
+    padding: 7px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    border-radius: 2px;
+    color: white;
+    margin: 3px;
+}
+.tombol-aksi-hapus{
+    background-color: rgb(246, 50, 50);
+    padding: 7px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    border-radius: 2px;
+    color: white;
+    margin: 3px;
+}
+
+
+
+/* form */
+
+.CasingAllForm{
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 500px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.CasingAllForm form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.CasingAllForm button{
+    height: 40px;
+    width: 80px;
+    background-color: rgb(0, 211, 0);
+    color: white;
+    border: none;
+    border-radius:3px ;
+    cursor: pointer;
+}
+
+.CasingAllForm button:last-child{
+    background-color: rgb(0, 48, 191);
+}
+
+
+.container-alert {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.358);
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.alertDelete {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 350px;
+    height: 200px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0.3px rgb(0, 0, 0);
+}
+
+.alertDelete span {
+    width: 100%;
+}
+
+.alertDelete span i {
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+    float: right;
+}
+
+.alertDelete .alertMessage h4 {
+    width: 100%;
+    text-align: center;
+}
+
+.alertDelete .alertButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.alertDelete .alertButton button{
+    padding: 10px;
+    background-color: red;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 0.3px rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.alertDelete .alertButton button:last-child{
+    background-color: green;
+}
+
+
+
+/* roi */
+
+.container-roi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.container-roi .wadah-roi{
+    background-color: rgb(188, 209, 255);
+    border-radius: 20px;
+    border: 1px solid grey;
+    margin: auto;
+    width: 1200px;
+    padding:35px 0px 35px 0px;
+}
+
+.roi-case {
+    margin: auto;
+    width: 700px;
+    height: 650px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 0px;
+}
+
+.roi-case .roi-rows td{
+    border: 0px;
+}
+
+.roi-case .roi-rows td:first-child {
+    width: 200px;
+    font-weight: bold;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.roi-case .roi-rows td input {
+    width: 90%;
+    height: 65%;
+    border: 0.1px solid grey;
+    border-radius: 10px;
+}
+
+.roi-case .roi-rows td select {
+    width: 92.3%;
+    height: 75%;
+    background-color: rgb(199, 226, 247);
+    border-radius: 10px;
+}
+
+.roi-case .roi-rows td input,
+select {
+    padding-left: 5px;
+}
+
+.roi-case .roi-rows td button {
+    width: 40%;
+    height: 60%;
+    background-color: rgb(4, 19, 181);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+/* dfdfdf */
+
+.pemberitahuan {
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    z-index: 105;
+    transition: 0.5s;
+}
+
+.pemberitahuan .close-pemberitahuan {
+    text-align: right;
+    font-size: 30px;
+    background-color: rgb(199, 226, 247);
+    border-radius: 5px;
+    line-height: 25px;
+}
+
+.pemberitahuan .close-pemberitahuan i {
+    cursor: pointer;
+}
+
+.pemberitahuan .message-pemberitahuan {
+    border: 0.5px solid grey;
+    margin-top: 10px;
+    height: 100%;
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+}
